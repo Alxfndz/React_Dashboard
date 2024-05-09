@@ -1,1 +1,1 @@
-# React_Dashboard
+# React_Pokemon_App
