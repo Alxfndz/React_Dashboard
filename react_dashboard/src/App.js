@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import PokemonComponent from './components/PokemonComponent';
 

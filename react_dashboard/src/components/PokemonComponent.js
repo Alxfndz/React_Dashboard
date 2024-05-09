@@ -1,6 +1,7 @@
-// PokemonComponent.js
+// components/PokemonComponent.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../App.css'; // Import the CSS file
 
 const PokemonComponent = () => {
   const [pokemonData, setPokemonData] = useState(null);
@@ -28,7 +29,7 @@ const PokemonComponent = () => {
   };
 
   return (
-    <div>
+    <div className="PokemonComponent">
       <h2>Pokémon Info</h2>
       <label htmlFor="pokemon">Enter Pokémon:</label>
       <input
@@ -43,6 +44,12 @@ const PokemonComponent = () => {
           <img src={pokemonData.sprites.front_default} alt={pokemonData.name} />
           <p>Height: {pokemonData.height}</p>
           <p>Weight: {pokemonData.weight}</p>
+          <p>Types:</p>
+          <ul>
+            {pokemonData.types.map((typeData, index) => (
+              <li key={index}>{typeData.type.name}</li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

@@ -1,0 +1,51 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.PokemonComponent {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.PokemonComponent h2 {
+  text-align: center;
+}
+
+.PokemonComponent label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.PokemonComponent input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.PokemonComponent img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+.PokemonComponent ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.PokemonComponent li {
+  margin-bottom: 5px;
+}
+
+/* Optional: Add hover effect to list items */
+.PokemonComponent li:hover {
+  cursor: pointer;
+  color: #007bff; /* Change color as desired */
+}
